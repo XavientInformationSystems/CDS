@@ -75,6 +75,7 @@ Once you have submitted the jar , you can check the metadata of the file stored 
 
 ### Scan the Hbase table
 ```scan table_name```
+
 ![alt text](https://github.com/XavientInformationSystems/CDS/blob/master/src/main/resources/images/hbase-1.png "Architecture")
 
 
