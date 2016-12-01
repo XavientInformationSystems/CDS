@@ -88,20 +88,20 @@ Once you have submitted the jar , you can check the metadata of the file stored 
 
 ## Use Cases
 
-Healthcare
-E-Government
-Ticket Collection Analysis
-Heterogeneous Sensor Data
-Equipment  Data Store
+- Healthcare
+- E-Government
+- Ticket Collection Analysis
+- Heterogeneous Sensor Data
+- Equipment  Data Store
 
 ## Credits
 Xavient
 
 ## Technical team
 
-Neeraj Sabharwal
-Mohiuddin Khan Inamdar
-Shobit Agarwal
-Mukesh kumar
+- Neeraj Sabharwal
+- Mohiuddin Khan Inamdar
+- Shobit Agarwal
+- Mukesh kumar
 
 
