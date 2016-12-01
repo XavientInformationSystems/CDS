@@ -47,7 +47,6 @@
 		<repository>
 			<id>snapshots-repo</id>
 			<url>https://repository.apache.org/content/repositories/snapshots</url>
-			<!-- <url>https://mvnrepository.com/</url> -->
 			<releases>
 				<enabled>true</enabled>
 			</releases>
