@@ -46,7 +46,7 @@ CDS comes along with a automated system where once data is reached to HDFS, the 
 -   Image Store : HDFS, Hbase/MongoDB
 -   Indexing: Apache Solr
 -   UI : Zeppelin, Hue or any custom UI which can support integration with underlying NoSQL
-
+![alt text](https://github.com/XavientInformationSystems/CDS/blob/master/src/main/resources/images/architecture.png "Architecture")
 
 
 ##STEPS
@@ -55,14 +55,14 @@ Keep some text, PDF, PPT, image file somewhere at cluster. Note down the path fo
 Go to $KAFKA_INSTALL_DIR/bin and create a Kafka topic named "kafka_topic" using the below mentioned command
 ```./kafka-topics.sh --create --topic kafka_topic --zookeeper zookeeper-server:port --replication-factor 1 --partition 5```
 
-Download the CDS  source code from "LINK" and compile the code using below commands:
+Download the CDS  source code from "https://github.com/XavientInformationSystems/CDS.git" and compile the code using below commands:
 
 ### Decompress the zip file.
 ```unzip cds.zip```
 
 ### Compile the code
-```cd cds
-mvn clean package```
+```cd cds```
+```mvn clean package```
 
 Once the code has being successfully compiled, go to the target directory and locate a jar by the name "uber-cds-1.0.0.jar"
 ###Submit the jar file to Hadoop cluster to start the process with the following set of argument path using below command:
@@ -75,12 +75,16 @@ Once you have submitted the jar , you can check the metadata of the file stored 
 
 ### Scan the Hbase table
 ```scan table_name```
+![alt text](https://github.com/XavientInformationSystems/CDS/blob/master/src/main/resources/images/hbase-1.png "Architecture")
+
 
 ### Finally, Message is reaching to Kafka Consumer as shown in below screenshot
 
 ```./kafka-console-consumer.sh --zookeeper 10.5.3.196:2181 --topic mytopic --from-beginning.```
+![alt text](https://github.com/XavientInformationSystems/CDS/blob/master/src/main/resources/images/kafka.png "Architecture")
 
 ### On consuming message from Kafka Consumer, it will be indexed by Solr, as shown in the following screenshot.
+![alt text](https://github.com/XavientInformationSystems/CDS/blob/master/src/main/resources/images/solr.png "Architecture")
 
 ## Use Cases
 
